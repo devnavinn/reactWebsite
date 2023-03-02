@@ -1,0 +1,58 @@
+.carousel1{
+    overflow: hidden;
+    /* cursor: grabbing; */
+    position: relative;
+    top:48px;
+}
+.inner-carousel1{
+    display: flex;
+    position: relative;
+    left: 15.387%;
+    
+}
+.carousel2{
+    position: relative;
+    /* cursor: grabbing; */
+    top:197px;
+    overflow: hidden;
+
+}
+
+.inner-carousel2{
+    display: flex;
+    position: relative;
+    left:15.387%;
+    
+}
+.carousel3{
+    position: relative;
+    overflow: hidden;
+}
+.inner-carousel3{
+    display: flex;
+    position: relative; 
+}
+.divContent{
+    position: relative;
+    left: 30px;
+    top:31px;
+}
+.cardType1{
+    min-width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+.cardType2{
+    min-width: 480px;
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 40px;
+
+}
+.cardType3{
+    min-width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 20px;
+}

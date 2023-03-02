@@ -1,0 +1,43 @@
+.cardHeading1{
+    position: relative;
+    width: 516px;
+    left: 15.387%;
+}
+.cardHeading2{
+    position: relative; 
+    width: auto;
+    left: 15.387%;
+    top:143.02px;
+}
+.cardHeading3{
+    position: relative;
+    width: auto;
+    left: 22.44%;
+    top:335px;
+}
+
+.cardHeadingLeft{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    /* identical to box height, or 128% */
+    display: inline-block;
+    letter-spacing: 0.196px;
+    color: #1D1D1F;
+}
+.cardHeadingRight{
+    color:#6E6E73;
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 32px;
+/* identical to box height, or 128% */
+
+display: inline-block;
+
+letter-spacing: 0.196px;
+
+}
