@@ -1,0 +1,55 @@
+.loginSignup{
+    position: relative;
+    text-align: center;
+    top:20px;
+    left: 75.672%;
+    width: 362px ;
+    height: 128px;
+    /* left: 1126px; */
+     
+    background: #FFFFFF;
+    box-shadow: -2px 2px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 0px 0px 10px;
+}
+.contentlogin{
+    text-align: center;
+    }
+
+.loginSignupHeading{
+    position: relative;
+    display:inline-block;
+    width: 240px;
+    height: 29px;
+    
+    top: 13px;
+    
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.5285px;
+    line-height: 28px;
+    /* or 160% */
+    color: #000000;
+    
+}
+.loginSignupTagline{
+    position: relative;
+    
+    width: 220px;
+    height: 20px;
+    left: 71px;
+    top: 15px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.0509px;
+    line-height: 19px;
+    /* identical to box height, or 160% */
+    
+    color: #000000;
+       
+}
+.loginbutton{
+position: relative;
+top: 33px;
+}

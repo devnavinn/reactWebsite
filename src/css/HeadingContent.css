@@ -1,0 +1,43 @@
+.contentHeading{
+    text-align: center;
+}
+.genx21{
+    background: linear-gradient(180deg, #C962F3 0%, #7EB9F6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+        
+}
+.headingTitle{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42.2054px;
+    line-height: 73px;
+    /* identical to box height, or 174% */
+    
+    letter-spacing: -1.14689px;
+}
+.tagLine{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.6903px;
+    line-height: 44px;
+    /* or 171% */
+    letter-spacing: -0.688132px;
+    color: #000000;
+    
+}
+.description{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6802px;
+    line-height: 23px;
+    /* or 160% */
+
+
+    
+    color: #000000;
+}

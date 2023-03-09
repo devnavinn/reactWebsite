@@ -1,0 +1,122 @@
+/* Upside Navbar Css */
+.upheader{
+    position: relative;
+    right: 3%;
+    height: 20px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.upheadercontainer{
+    display: flex;
+    justify-content:flex-end;
+}
+
+/* .upheader .search-box{
+display: flex;
+} */
+.search-box input{
+    padding-left: 1%;
+    position: absolute;
+    width: 250px;
+    max-width: 350px;
+    min-width: 250px;
+    height: 20px;
+    right: 17%;
+    top: 50%;
+    background-color: #F8F8F8;
+    filter: grayscale(1);
+    border-radius: 29.3945px;
+    border: none;
+}
+.search-box input:focus { 
+    outline: none !important;
+   }
+
+
+.upheader .upheader-link{
+display: flex;
+
+}
+.placeholder{
+    position: absolute;
+    left:20px;
+}
+.support{
+    width: 90px;
+    height: 15px;
+    margin:10px 15px;
+    padding:20px;
+    text-decoration: none;    
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.1094px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+       color: #0A0909;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0
+}
+.stores{
+    width: 70px;
+    height: 15px;
+    margin:10px 15px;
+    padding:20px;
+    text-decoration: none;    
+    
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.9336px;
+    line-height: 14px;
+    /* identical to box height, or 109% */
+/*     
+    display: flex;
+    align-items: center;
+    text-align: right;
+     */
+    color: #0D0D0D;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+/* Nav Bar Css */
+.navbar{
+    display:flex;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    
+}
+.nav-items a{
+    margin:10px;
+    padding: 10px;
+
+    text-decoration: none;
+    font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+
+line-height: 14px;
+/* identical to box height, or 100% */
+
+display: flex;
+align-items: center;
+letter-spacing: 1.41094px;
+text-transform: uppercase;
+
+color: #0E0D0D;
+}

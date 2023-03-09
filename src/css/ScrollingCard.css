@@ -1,0 +1,81 @@
+.carousel1{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    /* cursor: grabbing; */
+    position: relative;
+    top:48px;
+    
+}
+.inner-carousel1{
+    display: flex;
+    position: relative;
+    
+    left: 15.387%;
+    
+}
+.carousel2{
+    position: relative;
+    /* cursor: grabbing; */
+    top:197px;
+    overflow: hidden;
+
+}
+.carousel3{
+    position: relative;
+    top:599px;
+}
+
+.inner-carousel2{
+    display: flex;
+    position: relative;
+  
+    left:15.387%;
+    
+}
+.carousel3{
+    position: relative;
+    overflow: hidden;
+}
+.inner-carousel3{
+    width: auto;
+    height: 500px;
+    display: flex;
+    position: relative; 
+    left:14.31%;
+}
+
+.divContent{
+    position: relative;
+    width: 70%;
+    left: 30px;
+    top:31px;
+}
+.cardType1{
+    min-width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+.cardType2{
+    min-width: 480px;
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 40px;
+
+}
+.cardType3{
+    min-width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.cardType4{
+    width: 465px;
+    height: 581px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.main-container{
+    display: flex;
+}
