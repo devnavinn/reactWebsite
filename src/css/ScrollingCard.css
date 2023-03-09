@@ -76,6 +76,17 @@
     margin-right: 20px;
     border-radius: 20px;
 }
+.cardType5{
+    width: 31%;
+    height: 38vw;
+    
+    border-radius: 20px;
+}
 .main-container{
+    margin-left: 1.866%;
+    gap: 20px;
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 670px;
 }

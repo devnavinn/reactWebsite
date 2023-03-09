@@ -47,6 +47,7 @@ function App() {
         leftText="Gifts."
         rightText="Put the finishing touch on their favourite gift."
       />
+      <LastSection />
     </div>
   );
 }

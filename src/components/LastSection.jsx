@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LastProductCard from "./LastProductCard";
 import ProductCard from "./ProductCard";
-import LastImg1 from './img/LastImg1.png';
+import lsImgData from './assets/lsImgData';
 import tcimg1 from './img/tcImg1.png';
 import tcimg2 from './img/tcImg2.png';
 import tcimg3 from './img/tcimg3.png';
@@ -33,14 +33,20 @@ export default function LastSection() {
 
     return (
         <div className="main-container">
-            <LastProductCard
-                handleClick={handleClick}
-                className="cardType4"
-                backgroundImage={LastImg1}
-                firstTitle="HOLIDAY ACCESSORIES"
-                secondTitle="Get all the trimmings."
-                thirdTitle="Shop accessories for their favourite products."
-            />
+            {
+                lsImgData.map((item) => {
+                    return (
+                        <LastProductCard
+                            key={item.id}
+                            class="cardType5"
+                            backgroundImage={item.img}
+                            firstTitle={item.firstTitle}
+                            secondTitle={item.secondTitle}
+                            thirdTitle={item.thirdTitle}
+                        />
+                    )
+                })
+            }
         </div>
     );
 
