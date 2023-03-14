@@ -7,6 +7,7 @@ function Searchbar() {
                     <input type="text" placeholder="Search.."></input>
                 </div>
                 <div className="upheader-link" >
+
                     <a className="support" href="/#">Support</a>
                     <a className="stores" href="/#">Stores</a>
                 </div>

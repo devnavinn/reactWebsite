@@ -13,7 +13,7 @@ export default function ScrollingCard3() {
     }, []);
     return (
         <motion.div ref={carousel3} className="carousel3">
-            <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} whileTap={{ cursor: "grabbing" }} className="inner-carousel3">
+            <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel3">
                 <Card1
 
                     class="cardType3"
@@ -24,21 +24,21 @@ export default function ScrollingCard3() {
                 />
                 <ProductCard
 
-                    class="cardType4"
+
                     productImg={tcImg2}
                     productName="AirPods Pro (2nd generation)"
                     productPrice="MRP ₹26900.00 (Incl. of all taxes)"
                 />
                 <ProductCard
 
-                    class="cardType4"
+
                     productImg={tcImg3}
                     productName="Apple TV 4K Wi‑Fi + Ethernet with 128GB storage"
                     productPrice="MRP ₹16900.00 (Incl. of all taxes)"
                 />
                 <ProductCard
 
-                    class="cardType4"
+
                     productImg={tcImg2}
 
                     productName="iPhone 14 Pro Max Leather Case with MagSafe - Forest Green"
@@ -54,21 +54,19 @@ export default function ScrollingCard3() {
                 />
                 <ProductCard
 
-                    class="cardType4"
+
                     productImg={tcImg2}
                     productName="AirPods Pro (2nd generation)"
                     productPrice="MRP ₹26900.00 (Incl. of all taxes)"
                 />
                 <ProductCard
 
-                    class="cardType4"
+
                     productImg={tcImg3}
                     productName="Apple TV 4K Wi‑Fi + Ethernet with 128GB storage"
                     productPrice="MRP ₹16900.00 (Incl. of all taxes)"
                 />
                 <ProductCard
-
-                    class="cardType4"
                     productImg={tcImg2}
 
                     productName="iPhone 14 Pro Max Leather Case with MagSafe - Forest Green"

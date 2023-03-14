@@ -12,7 +12,7 @@ export default function ScrollingCard1() {
     }, []);
     return (
         <motion.div ref={carousel1} className="carousel2">
-            <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} whileTap={{ cursor: "grabbing" }} className="inner-carousel2">
+            <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel2">
                 {
                     Carousel2Data.map((item) => {
                         return (

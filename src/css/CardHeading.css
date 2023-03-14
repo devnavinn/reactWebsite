@@ -15,7 +15,16 @@
     left: 22.44%;
     top:335px;
 }
-
+.cardHeading4{
+    position: relative;
+    top: 525px;
+    left: 14.65%;
+}
+.cardHeading5{
+    position: relative;
+    left:1.8666%;
+    top:625px;
+}
 .cardHeadingLeft{
     font-family: 'Helvetica Neue';
     font-style: normal;

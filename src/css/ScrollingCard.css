@@ -1,12 +1,16 @@
 .carousel1{
+    width: 100%;
+    height: 500px;
     overflow: hidden;
     /* cursor: grabbing; */
     position: relative;
     top:48px;
+    
 }
 .inner-carousel1{
     display: flex;
     position: relative;
+    
     left: 15.387%;
     
 }
@@ -17,10 +21,15 @@
     overflow: hidden;
 
 }
+.carousel3{
+    position: relative;
+    top:599px;
+}
 
 .inner-carousel2{
     display: flex;
     position: relative;
+  
     left:15.387%;
     
 }
@@ -29,11 +38,16 @@
     overflow: hidden;
 }
 .inner-carousel3{
+    width: auto;
+    height: 500px;
     display: flex;
     position: relative; 
+    left:14.31%;
 }
+
 .divContent{
     position: relative;
+    width: 70%;
     left: 30px;
     top:31px;
 }
@@ -55,4 +69,24 @@
     height: 500px;
     border-radius: 20px;
     margin-right: 20px;
+}
+.cardType4{
+    width: 465px;
+    height: 581px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.cardType5{
+    width: 31%;
+    height: 38vw;
+    
+    border-radius: 20px;
+}
+.main-container{
+    margin-left: 1.866%;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 670px;
 }

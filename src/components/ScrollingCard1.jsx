@@ -11,7 +11,7 @@ export default function ScrollingCard1() {
         setWidth(carousel1.current.scrollWidth - carousel1.current.clientWidth);
     }, []);
     return (
-        <motion.div ref={carousel1} className="carousel1">
+        <motion.div ref={carousel1} className="carousel1"  >
             <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="inner-carousel1">
                 {
                     Carousel1Data.map((item) => {
