@@ -9,9 +9,9 @@ export default function ProductCard(props) {
                 </a>
             </div>
             <div className="divContent">
-                <p className='contentParagraph'>New</p>
-                <h4 style={{ "margin-top": "3%" }} className='contentH1' >{props.productName}</h4>
-                <p style={{ "margin-top": "15%" }} className='contentH2'>{props.productPrice}</p>
+                <p className='contentParagraph1'>New</p>
+                <h4 style={{ "margin-top": "3%" }} className='contentH11' >{props.productName}</h4>
+                <p style={{ "margin-top": "15%" }} className='contentH21'>{props.productPrice}</p>
             </div>
         </motion.div>
     )

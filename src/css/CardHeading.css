@@ -1,29 +1,26 @@
 .cardHeading1{
-    position: relative;
+  
     width: 516px;
-    left: 15.387%;
+   
+    margin-left: 15.387%;
 }
 .cardHeading2{
-    position: relative; 
-    width: auto;
-    left: 15.387%;
-    top:143.02px;
+     width: auto;
+     margin-left: 15.387%;
+     margin-top: 95px;
 }
 .cardHeading3{
-    position: relative;
-    width: auto;
-    left: 22.44%;
-    top:335px;
+    margin-left:22.44%;
+    margin-top: 155px; 
 }
 .cardHeading4{
-    position: relative;
-    top: 525px;
-    left: 14.65%;
+    margin-left: 14.65%;
+    margin-top: 120px;
 }
+
 .cardHeading5{
-    position: relative;
-    left:1.8666%;
-    top:625px;
+    margin-top:54px;
+    margin-left: 1.8666%;
 }
 .cardHeadingLeft{
     font-family: 'Helvetica Neue';

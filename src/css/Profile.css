@@ -1,5 +1,5 @@
 .profile-container{
-    width:740px !important;
+    width:500px;
     height: 265px;
     border-radius: 132px;
     cursor: pointer;
@@ -34,19 +34,28 @@
     border: 20px solid #FFFFFF;
 }
 .profile-desc{
-    display: none;
+    display:none;
+    position: absolute;
     line-height: 1.4;
-    margin-left: 34px; 
     width: 300px;
     left: 15;
-    position: relative;
-    left: 35%;
+    left: 21%;
     top: 15%;
 }
+.profile-desc1{
+    position: absolute;
+    line-height: 1.4;
+    width: 300px;
+    left: 15;
+    left: 21%;
+    top: 15%;
+}
+
 .profiles-info{
     width: 85%;
+    margin: auto;
+    margin-top: 75px;
     display: flex;
     position: relative;
-    top:412px;
-    left:116px;
 }
+

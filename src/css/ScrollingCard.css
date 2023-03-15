@@ -3,8 +3,7 @@
     height: 500px;
     overflow: hidden;
     /* cursor: grabbing; */
-    position: relative;
-    top:48px;
+    margin-top:48px;
     
 }
 .inner-carousel1{
@@ -15,15 +14,11 @@
     
 }
 .carousel2{
-    position: relative;
+    
     /* cursor: grabbing; */
-    top:197px;
+    margin-top: 54px;
     overflow: hidden;
 
-}
-.carousel3{
-    position: relative;
-    top:599px;
 }
 
 .inner-carousel2{
@@ -34,23 +29,92 @@
     
 }
 .carousel3{
-    position: relative;
+    margin-left: 15.387%;
+   margin-top: 70px;
     overflow: hidden;
 }
 .inner-carousel3{
     width: auto;
     height: 500px;
     display: flex;
-    position: relative; 
-    left:14.31%;
+    
+   
 }
 
 .divContent{
     position: relative;
-    width: 70%;
+    width: 80%;
     left: 30px;
     top:31px;
 }
+.contentParagraph{
+    width: auto;
+    height: 14px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.12px;
+    color: #F5F5F7;
+    
+}
+.contentParagraph1{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.12px;
+    color: #BF4800;
+    margin-top: 10%;
+
+
+}
+.contentH11{
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+margin-top: 5%;
+font-size: 17px;
+line-height: 21px;
+letter-spacing: -0.374px;
+color: #1D1D1F;
+}
+.contentH1{
+    margin: 5px 0;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.196px;
+    color:#D9D9DD;;
+}
+.contentH21{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10%;
+    font-size: 14px;
+    line-height: 18px;
+     display: flex;
+    align-items: center;
+    letter-spacing: -0.224px;
+    color: #1D1D1F;
+ }
+.contentH2{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.374px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    }
 .cardType1{
     min-width: 400px;
     height: 500px;
@@ -71,10 +135,13 @@
     margin-right: 20px;
 }
 .cardType4{
-    width: 465px;
-    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    width: auto;
+    height: auto;
     margin-right: 20px;
-    border-radius: 20px;
+    
 }
 .cardType5{
     width: 31%;
@@ -87,6 +154,5 @@
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    top: 670px;
+    margin-top: 62px;
 }

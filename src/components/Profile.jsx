@@ -4,7 +4,10 @@ import profileInfo from "./assets/ProfileData";
 const [profile1, profile1logo, profile2, profile2logo, profile3, profile3logo, profile4, profile4logo, profile5, profile5logo, profile6, profile6logo] = profileInfo;
 export default function Profile() {
     const [checked, setChecked] = useState(-1);
-    const [cards, setCards] = useState([
+    const [id, setId] = useState(0);
+    const [isclicked, setIscliked] = useState(false);
+
+    const cards = [
         {
             profileImg: profile1,
             logo: profile1logo,
@@ -12,7 +15,7 @@ export default function Profile() {
             education: "PHD holder in Machine Learning",
             experience: "10+ years of experience",
             content: "Involved in the field of data mining since the early 1990s, developing algorithms, applying them to real-world problems, data analytics consulting ",
-            isCollapsed: true,
+
         },
         {
             profileImg: profile2,
@@ -21,7 +24,7 @@ export default function Profile() {
             education: "PHD holder in Machine Learning",
             experience: "10+ years of experience",
             content: "Involved in the field of data mining since the early 1990s, developing algorithms, applying them to real-world problems, data analytics consulting ",
-            isCollapsed: true,
+
         },
         {
             profileImg: profile3,
@@ -30,7 +33,7 @@ export default function Profile() {
             education: "PHD holder in Machine Learning",
             experience: "10+ years of experience",
             content: "Involved in the field of data mining since the early 1990s, developing algorithms, applying them to real-world problems, data analytics consulting ",
-            isCollapsed: true,
+
         },
         {
             profileImg: profile4,
@@ -39,7 +42,7 @@ export default function Profile() {
             education: "PHD holder in Machine Learning",
             experience: "10+ years of experience",
             content: "Involved in the field of data mining since the early 1990s, developing algorithms, applying them to real-world problems, data analytics consulting ",
-            isCollapsed: true,
+
         },
         {
             profileImg: profile5,
@@ -48,7 +51,7 @@ export default function Profile() {
             education: "PHD holder in Machine Learning",
             experience: "10+ years of experience",
             content: "Involved in the field of data mining since the early 1990s, developing algorithms, applying them to real-world problems, data analytics consulting ",
-            isCollapsed: true,
+
         },
         {
             profileImg: profile6,
@@ -57,15 +60,20 @@ export default function Profile() {
             education: "PHD holder in Machine Learning",
             experience: "10+ years of experience",
             content: "Involved in the field of data mining since the early 1990s, developing algorithms, applying them to real-world problems, data analytics consulting ",
-            isCollapsed: true,
-        },
-    ]);
 
-    const handleClick=(index)=>{
-        if(checked==index)
+        },
+    ];
+
+    const handleClick = (index) => {
+        if (checked == index)
             setChecked(-1)
         else
             setChecked(index)
+
+        setIscliked((preValue) => {
+            return !preValue;
+        })
+        setId(index);
     }
 
     return (
@@ -73,9 +81,11 @@ export default function Profile() {
 
             {
                 cards.map((profile, index) => {
-                    if((checked==-1) || (index == 0))
+                    if ((checked == -1) || (index == 0))
                         return (
-                            <div className="profile-container" key={index} onClick={()=>{handleClick(index)}}>
+                            <div className="profile-container" key={index}
+
+                                onClick={() => { handleClick(index) }}>
                                 <div className='profile-pic'>
                                     <img className="profile-img" src={profile.profileImg} alt='profile' />
                                     <div className='profile-logo'>
@@ -83,66 +93,61 @@ export default function Profile() {
                                     </div>
 
                                 </div>
-                                <div className="profile-desc" >
-                                    <div className="desc-header">
-                                        <h2 style={{ "margin": "1%" }}>{profile.name}</h2>
-                                        <p style={{ "margin": "1%" }}>{profile.education}</p>
-                                        <p style={{ "margin": "1%" }}>{profile.experience}</p>
+                                {id == index &&
+                                    <div className="profile-desc1 "   >
+                                        <div className="desc-header">
+                                            <h2 style={{ "margin": "1%" }}>{profile.name}</h2>
+                                            <p style={{ "margin": "1%" }}>{profile.education}</p>
+                                            <p style={{ "margin": "1%" }}>{profile.experience}</p>
+                                        </div>
+                                        <div style={{ "margin-top": "6%" }} className="desc-button">
+                                            <p>{profile.content}</p>
+                                        </div>
                                     </div>
-                                    <div style={{ "margin-top": "6%" }} className="desc-button">
-                                        <p>{profile.content}</p>
+                                }
+                            </div>
+                        )
+                    else if ((index <= checked)) {
+                        return (
+                            <div className="profile-container" key={index} onClick={() => { handleClick(index) }}
+                                style={{ transform: `translate3d(-${index * 40}%, 0, -480px)` }}>
+                                <div className='profile-pic'>
+                                    <img className="profile-img" src={profile.profileImg} alt='profile' />
+                                    <div className='profile-logo'>
+                                        <img className="logo" src={profile.logo} alt='profile' />
                                     </div>
+
+                                </div>
+                                {id == index &&
+                                    <div className="profile-desc1 "   >
+                                        <div className="desc-header">
+                                            <h2 style={{ "margin": "1%" }}>{profile.name}</h2>
+                                            <p style={{ "margin": "1%" }}>{profile.education}</p>
+                                            <p style={{ "margin": "1%" }}>{profile.experience}</p>
+                                        </div>
+                                        <div style={{ "margin-top": "6%" }} className="desc-button">
+                                            <p>{profile.content}</p>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                        )
+                    }
+                    else {
+                        return (
+                            <div className="profile-container" key={index} onClick={() => { handleClick(index) }}
+                                style={{ transform: `translate3d(${(cards.length - 1 - index) * 40}%, 0, -480px)` }}>
+                                <div className='profile-pic'>
+                                    <img className="profile-img" src={profile.profileImg} alt='profile' />
+                                    <div className='profile-logo'>
+                                        <img className="logo" src={profile.logo} alt='profile' />
+                                    </div>
+
                                 </div>
                             </div>
-                            )
-                            else if((index<=checked)){
-                                return(
-                                    <div className="profile-container" key={index} onClick={()=>{handleClick(index)}} 
-                                     style={{transform: `translate3d(-${index*40}%, 0, -480px)` }}>
-                                    <div className='profile-pic'>
-                                        <img className="profile-img" src={profile.profileImg} alt='profile' />
-                                        <div className='profile-logo'>
-                                            <img className="logo" src={profile.logo} alt='profile' />
-                                        </div>
-    
-                                    </div>
-                                    <div className="profile-desc" >
-                                        <div className="desc-header">
-                                            <h2 style={{ "margin": "1%" }}>{profile.name}</h2>
-                                            <p style={{ "margin": "1%" }}>{profile.education}</p>
-                                            <p style={{ "margin": "1%" }}>{profile.experience}</p>
-                                        </div>
-                                        <div style={{ "margin-top": "6%" }} className="desc-button">
-                                            <p>{profile.content}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                )
-                            }
-                            else{
-                                return(
-                                    <div className="profile-container" key={index} onClick={()=>{handleClick(index)}} 
-                                     style={{transform: `translate3d(${(cards.length -1-index)*40}%, 0, -480px)` }}>
-                                    <div className='profile-pic'>
-                                        <img className="profile-img" src={profile.profileImg} alt='profile' />
-                                        <div className='profile-logo'>
-                                            <img className="logo" src={profile.logo} alt='profile' />
-                                        </div>
-    
-                                    </div>
-                                    <div className="profile-desc" >
-                                        <div className="desc-header">
-                                            <h2 style={{ "margin": "1%" }}>{profile.name}</h2>
-                                            <p style={{ "margin": "1%" }}>{profile.education}</p>
-                                            <p style={{ "margin": "1%" }}>{profile.experience}</p>
-                                        </div>
-                                        <div style={{ "margin-top": "6%" }} className="desc-button">
-                                            <p>{profile.content}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                )
-                            }
+                        )
+                    }
                 })
             }
         </div>
