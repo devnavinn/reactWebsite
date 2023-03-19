@@ -1,4 +1,5 @@
 .profile-container{
+    position: relative;
     width:500px;
     height: 265px;
     border-radius: 132px;
